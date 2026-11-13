@@ -215,11 +215,11 @@ h3 { line-height: 1.25; }
 /* первый экран: фото с прозрачностью .4 (дефолт шаблона .3), затемнение только под текстом слева и внизу */
 .s-hero__bg { height: min(94%, 780px); }
 :root { --shadow: 0 18px 44px -22px rgb(70 30 90 / .38); }
-.s-hero__bg img { opacity: .4; filter: saturate(1.1); object-position: 50% 55%; }
+.s-hero__bg img { opacity: .7; filter: saturate(1.1); object-position: 50% 55%; }
 .s-hero__bg::after { background:
-  linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 50%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 28%, transparent) 32%, transparent 58%),
+  linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 66%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 44%, transparent) 36%, transparent 62%),
   linear-gradient(180deg, transparent 0%, transparent 70%, var(--c-canvas) 100%); }
-.s-hero__text .s-lead, .s-hero__text .s-rating { color: var(--c-ink); text-shadow: 0 1px 14px color-mix(in srgb, var(--c-canvas) 90%, transparent); }
+.s-hero__text .s-lead, .s-hero__text .s-rating, .s-hero__text .s-ticks li { color: var(--c-ink); font-weight: 600; text-shadow: 0 0 10px var(--c-canvas), 0 0 22px var(--c-canvas); }
 .s-hero__text h1, .s-hero__text .s-eyebrow, .s-hero__text .s-ticks { text-shadow: 0 2px 18px color-mix(in srgb, var(--c-canvas) 85%, transparent); }
 .s-bar__brand { font-size: .95rem; white-space: nowrap; }
 @media (max-width: 560px) {
